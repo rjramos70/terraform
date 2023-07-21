@@ -1,9 +1,3 @@
-# Define the provider template
-provider "aws" {
-  profile = "default"
-  region = "eu-west-1"
-}
-
 # Defining a IAM group with name 'app_ami'
 data "aws_ami" "app_ami" {
   most_recent = true
